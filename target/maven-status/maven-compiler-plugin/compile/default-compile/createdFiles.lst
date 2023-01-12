@@ -1,0 +1,6 @@
+org\UITestingPlayground\pageobjects\DynamicTablePage.class
+org\UITestingPlayground\pageobjects\SampleAppPage.class
+org\UITestingPlayground\pageobjects\DynamicIdPage.class
+org\UITestingPlayground\pageobjects\OverlappedElementPage.class
+org\UITestingPlayground\pageobjects\HomePage.class
+org\UITestingPlayground\resources\ExtentReportsNG.class
