@@ -27,7 +27,7 @@ jobs:
 
     
     - name: Set up JDK 11
-      uses: actions/setup-java@master
+      uses: actions/setup-java@v3
       with:
         java-version: '11'
         distribution: 'temurin'
@@ -51,7 +51,8 @@ jobs:
       if: always()
       run: |
        curl -X POST
-       -H "multipart/form-data"\
-       -H "x-api-key:${{secrets.MY_CALLIOPE_API_KEY}}"\
-       -F "file[]=@target/surefire-reports/TEST-TestSuite.xml"\
-       https://app.calliope.pro/api/v2/profile/${{secrets.CALLIOPE_PROFILE_ID}}/import/testng
+       "https://app.calliope.pro/api/v2/profile/${{secrets.CALLIOPE_PROFILE_ID}}/import/testng"
+       -H "Content-Type: multipart/form-data"
+       -H "x-api-key:${{secrets.MY_CALLIOPE_API_KEY}}"
+       -F "file[]=@target/surefire-reports/TEST-TestSuite.xml"
+       
