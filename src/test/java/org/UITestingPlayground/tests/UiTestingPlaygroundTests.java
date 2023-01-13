@@ -28,7 +28,9 @@ public class UiTestingPlaygroundTests extends BaseTest {
     @Test
     public void dynamicTablePageTest(){
         homePage.goTo();
+        waitForPageToLoad();
         homePage.goToDynamicTablePage();
+        waitForPageToLoad();
         double cpuCellValue=dynamicTablePage.getCpuLoadValue("Chrome");
         double cpuLabelValue=dynamicTablePage.getCpuLabelValue();
         Assert.assertEquals(cpuCellValue,cpuLabelValue);

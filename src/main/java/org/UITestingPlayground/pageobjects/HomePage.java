@@ -26,6 +26,7 @@ WebElement dynamicTableLink;
 
   public void goTo(){
         driver.get("http://www.uitestingplayground.com/");
+
   }
 
   public void goToDynamicTablePage(){

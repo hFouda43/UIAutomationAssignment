@@ -56,6 +56,9 @@ public class BaseTest {
         driver.navigate().refresh();
     }
 
+    public void waitForPageToLoad(){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+    }
     @AfterClass
     public void tearDown() {
         driver.close();
