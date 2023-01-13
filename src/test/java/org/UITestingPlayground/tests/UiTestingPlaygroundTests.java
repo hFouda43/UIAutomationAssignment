@@ -8,21 +8,21 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class UiTestingPlaygroundTests  {
+public class UiTestingPlaygroundTests extends BaseTest {
     @Test
     public void testmethod(){
         System.out.println("test");
     }
-//    WebDriver driver;
-//    {
-//        try {
-//            driver = initializeDriver();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
-//
-//    HomePage homePage=new HomePage(driver);
+    WebDriver driver;
+    {
+        try {
+            driver = initializeDriver();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    HomePage homePage=new HomePage(driver);
 //    DynamicTablePage dynamicTablePage=new DynamicTablePage(driver);
 //    OverlappedElementPage overlappedElementPage=new OverlappedElementPage(driver);
 //    SampleAppPage sampleAppPage=new SampleAppPage(driver);
