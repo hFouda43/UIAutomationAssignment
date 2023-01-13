@@ -42,4 +42,12 @@ jobs:
     
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+      
+    - name: Upload extent report results to Github
+      if: always()
+      run: |
+         git add target
+         git commit -m "adding newly generated reports results"
+         git push -u origin master
+      shell: bash
   
