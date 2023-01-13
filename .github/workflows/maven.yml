@@ -47,7 +47,7 @@ jobs:
          git push -u origin master
       shell: bash
       
-    - name: Upload extent report results to Github
+    - name: Upload TestNG report results to Calliope PRo Platform
       if: always()
       run: |
        curl -X POST
