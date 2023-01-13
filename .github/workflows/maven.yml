@@ -48,10 +48,10 @@ jobs:
       shell: bash
       
     - name: Upload TestNG report results to Calliope PRo Platform
-      run: |
-       curl -X POST
-       -H "Content-Type:multipart/form-data"
-       -H "x-api-key:${{ secrets.MY_CALLIOPE_API_KEY }}"
-       -F "file[]=@target/surefire-reports/TEST-TestSuite.xml;type=text/xml"
-       "https://app.calliope.pro/api/v2/profile/${{ secrets.CALLIOPE_PROFILE_ID }}/import"
+      if: always()
+      run: curl -X POST
+           -H "x-api-key:${{ secrets.MY_CALLIOPE_API_KEY }}"
+           -H "multipart/form-data"
+           -F "file[]=@target/surefire-reports/TEST-TestSuite.xml"
+           "https://app.calliope.pro/api/v2/profile/${{ secrets.CALLIOPE_PROFILE_ID }}/import/cucumber"
        
