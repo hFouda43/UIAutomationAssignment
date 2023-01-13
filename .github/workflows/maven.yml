@@ -21,11 +21,19 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
+    - uses: nanasess/setup-chromedriver@v1
+      with:
+       # Optional: do not specify to match Chrome's version
+       chromedriver-version: '88.0.4324.96'
+    
     - name: Set up JDK 11
       uses: actions/setup-java@v3
       with:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
+        
+    
     - name: Build with Maven
       run: mvn -B package --file pom.xml
