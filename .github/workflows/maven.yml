@@ -32,4 +32,17 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+      
+    - name: Upload extent report results to Github
+      if: always()
+      run: |
+         git config user.email "hendfouda@gmail.com"
+         git config user.name "hFouda43"
+         git add target
+         git commit -m "adding newly generated reports results"
   
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
