@@ -48,7 +48,6 @@ jobs:
       shell: bash
       
     - name: Upload TestNG report results to Calliope PRo Platform
-      if: always()
       run: |
        curl -X POST
        -H "Content-Type:multipart/form-data"
