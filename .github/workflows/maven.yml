@@ -46,3 +46,12 @@ jobs:
          git commit -m "adding newly generated reports results"
          git push -u origin master
       shell: bash
+      
+    - name: Upload extent report results to Github
+      if: always()
+      run: |
+       curl -X POST
+       -H "Content-Type: multipart/form-data"
+       -H "x-api-key:${{MY_CALLIOPE_API_KEY}}"
+       -F "file[]=@target/surefire-reports/TEST-TestSuite.xml"
+       https://app.calliope.pro/api/v2/profile/${{secrets.CALLIOPE_PROFILE_ID}}/import//testng
