@@ -45,8 +45,8 @@ jobs:
       if: always()
       run: |
          git config user.email "hendfouda@gmail.com"
-         git config user.name "hendf"
-         git add reports
-         git commit -m "adding extent report results"
+         git config user.name "hFouda43"
+         git add target
+         git commit -m "adding newly generated reports results"
          git push -u origin master
       shell: bash
