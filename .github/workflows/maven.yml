@@ -51,7 +51,7 @@ jobs:
       if: always()
       run: |
        curl -X POST
-       "https://app.calliope.pro/api/v2/profile/${{secrets.CALLIOPE_PROFILE_ID}}/import/testng"
+       "https://app.calliope.pro/api/v2/profile/${{secrets.CALLIOPE_PROFILE_ID}}/import"
        -H "Content-Type: multipart/form-data"
        -H "x-api-key:${{secrets.MY_CALLIOPE_API_KEY}}"
        -F "file[]=@target/surefire-reports/TEST-TestSuite.xml"
