@@ -46,7 +46,7 @@ jobs:
       run: |
          git config user.email "hendfouda@gmail.com"
          git config user.name "hendf"
-         git add results
+         git add reports
          git commit -m "adding extent report results"
          git push -u origin master
       shell: bash
