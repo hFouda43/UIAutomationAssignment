@@ -52,7 +52,7 @@ jobs:
       run: |
        curl -X POST
        -H "Content-Type:multipart/form-data"
-       -H "x-api-key:MTFmOWFhM2NjZGNiYjM2ODZhMTFjYzFhYWIxY2Q5MDVkZjJiZGQ3NWM0M2M5NzdmZmExN2VhZmEyYmYyZWY2MDg0"
-       -F "file[]=@target/surefire-reports/TEST-TestSuite.xml"
-       "https://app.calliope.pro/api/v2/profile/4634/import"
+       -H "x-api-key:${{ secrets.MY_CALLIOPE_API_KEY }}"
+       -F "file[]=@target/surefire-reports/TEST-TestSuite.xml;type=text/xml"
+       "https://app.calliope.pro/api/v2/profile/${{ secrets.CALLIOPE_PROFILE_ID }}/import"
        
