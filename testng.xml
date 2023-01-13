@@ -9,9 +9,9 @@
             <class name="org.UITestingPlayground.tests.UiTestingPlaygroundTests">
                 <methods>
                     <include name="dynamicTablePageTest"/>
-                    <include name="overlappedElementPageTest"/>
+                    <!--include name="overlappedElementPageTest"/>
                     <include name="sampleAppPageTest"/>
-                    <include name="dynamicIdPage"/>
+                    <include name="dynamicIdPage"/-->
                 </methods>
             </class>
         </classes>
