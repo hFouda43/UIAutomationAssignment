@@ -21,8 +21,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    
-    - uses: actions/checkout@v2
       with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
           fetch-depth: 0
@@ -45,9 +43,5 @@ jobs:
          git config user.name "hFouda43"
          git add target
          git commit -m "adding newly generated reports results"
-  
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+         git push -u origin master
+      shell: bash
