@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-13T23:14:29 UTC" name="Surefire suite" finished-at="2023-01-13T23:14:31 UTC" duration-ms="2140">
+  <suite started-at="2023-01-13T23:19:40 UTC" name="Surefire suite" finished-at="2023-01-13T23:19:42 UTC" duration-ms="2202">
     <groups>
     </groups>
-    <test started-at="2023-01-13T23:14:29 UTC" name="Surefire test" finished-at="2023-01-13T23:14:31 UTC" duration-ms="2140">
+    <test started-at="2023-01-13T23:19:40 UTC" name="Surefire test" finished-at="2023-01-13T23:19:42 UTC" duration-ms="2202">
       <class name="org.UITestingPlayground.tests.UiTestingPlaygroundTests">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:org.UITestingPlayground.tests.UiTestingPlaygroundTests@49206065]" started-at="2023-01-13T23:14:29 UTC" name="initializeDriver" finished-at="2023-01-13T23:14:29 UTC" duration-ms="42" status="PASS">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:org.UITestingPlayground.tests.UiTestingPlaygroundTests@2e51d054]" started-at="2023-01-13T23:19:40 UTC" name="initializeDriver" finished-at="2023-01-13T23:19:40 UTC" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="dynamicIdPage()[pri:0, instance:org.UITestingPlayground.tests.UiTestingPlaygroundTests@49206065]" started-at="2023-01-13T23:14:29 UTC" name="dynamicIdPage" finished-at="2023-01-13T23:14:30 UTC" duration-ms="693" status="PASS">
+        <test-method signature="dynamicIdPage()[pri:0, instance:org.UITestingPlayground.tests.UiTestingPlaygroundTests@2e51d054]" started-at="2023-01-13T23:19:40 UTC" name="dynamicIdPage" finished-at="2023-01-13T23:19:41 UTC" duration-ms="898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dynamicIdPage -->
-        <test-method signature="dynamicTablePageTest()[pri:0, instance:org.UITestingPlayground.tests.UiTestingPlaygroundTests@49206065]" started-at="2023-01-13T23:14:30 UTC" name="dynamicTablePageTest" finished-at="2023-01-13T23:14:30 UTC" duration-ms="639" status="PASS">
+        <test-method signature="dynamicTablePageTest()[pri:0, instance:org.UITestingPlayground.tests.UiTestingPlaygroundTests@2e51d054]" started-at="2023-01-13T23:19:41 UTC" name="dynamicTablePageTest" finished-at="2023-01-13T23:19:42 UTC" duration-ms="580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dynamicTablePageTest -->
-        <test-method signature="overlappedElementPageTest()[pri:0, instance:org.UITestingPlayground.tests.UiTestingPlaygroundTests@49206065]" started-at="2023-01-13T23:14:30 UTC" name="overlappedElementPageTest" finished-at="2023-01-13T23:14:31 UTC" duration-ms="276" status="PASS">
+        <test-method signature="overlappedElementPageTest()[pri:0, instance:org.UITestingPlayground.tests.UiTestingPlaygroundTests@2e51d054]" started-at="2023-01-13T23:19:42 UTC" name="overlappedElementPageTest" finished-at="2023-01-13T23:19:42 UTC" duration-ms="252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- overlappedElementPageTest -->
-        <test-method signature="sampleAppPageTest()[pri:0, instance:org.UITestingPlayground.tests.UiTestingPlaygroundTests@49206065]" started-at="2023-01-13T23:14:31 UTC" name="sampleAppPageTest" finished-at="2023-01-13T23:14:31 UTC" duration-ms="374" status="PASS">
+        <test-method signature="sampleAppPageTest()[pri:0, instance:org.UITestingPlayground.tests.UiTestingPlaygroundTests@2e51d054]" started-at="2023-01-13T23:19:42 UTC" name="sampleAppPageTest" finished-at="2023-01-13T23:19:42 UTC" duration-ms="352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sampleAppPageTest -->
-        <test-method signature="testmethod()[pri:0, instance:org.UITestingPlayground.tests.UiTestingPlaygroundTests@49206065]" started-at="2023-01-13T23:14:31 UTC" name="testmethod" finished-at="2023-01-13T23:14:31 UTC" duration-ms="0" status="PASS">
+        <test-method signature="testmethod()[pri:0, instance:org.UITestingPlayground.tests.UiTestingPlaygroundTests@2e51d054]" started-at="2023-01-13T23:19:42 UTC" name="testmethod" finished-at="2023-01-13T23:19:42 UTC" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testmethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.UITestingPlayground.tests.UiTestingPlaygroundTests@49206065]" started-at="2023-01-13T23:14:31 UTC" name="tearDown" finished-at="2023-01-13T23:14:31 UTC" duration-ms="60" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.UITestingPlayground.tests.UiTestingPlaygroundTests@2e51d054]" started-at="2023-01-13T23:19:42 UTC" name="tearDown" finished-at="2023-01-13T23:19:42 UTC" duration-ms="58" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
